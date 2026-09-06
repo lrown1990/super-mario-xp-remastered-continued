@@ -1,3 +1,9 @@
+// Without this the whole game runs on GameMaker's fixed seed: every session
+// draws the SAME sequence, so anything picked "at random" comes out identical
+// run after run. Reported from play as the three guardians of 7-2 always
+// turning up in the same order.
+randomize();
+
 // Everything in the room stands still while a boss defeat is playing out.
 // Only the stage 5 arena uses it so far: there the floor is made of lifts
 // that keep going down, so without this the player had to carry on climbing

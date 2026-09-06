@@ -33,8 +33,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Sprites",
-    "path":"folders/Sprites.yy",
+    "name":"Sea Serpent",
+    "path":"folders/Sprites/Bosses/Sea Serpent.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

@@ -12,6 +12,15 @@ if(deathTimeout > 3) {
 		room_goto(lives_screen);
 	} else {
 		global.playerLives = 5;
+		// AND the save has to be told, not just the run in memory. The lives
+		// are written to the save at the start of every level, so at the game
+		// over the save still holds the one life you died with: choosing
+		// "continue" played on the five in memory and was fine, but choosing
+		// "exit" and picking a stage from the menu read that one back and you
+		// started with a single life. Reported from play. The rest of the
+		// state written here is the fresh one set just above (no weapon, ten
+		// hearts, full health), which is what a game over should leave behind.
+		save_run_state();
 		room_goto(gameover);
 	}
 }

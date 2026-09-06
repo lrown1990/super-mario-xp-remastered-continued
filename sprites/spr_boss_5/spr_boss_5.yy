@@ -28,8 +28,8 @@
   "nineSlice":null,
   "origin":9,
   "parent":{
-    "name":"Bosses",
-    "path":"folders/Sprites/Bosses.yy",
+    "name":"Dino",
+    "path":"folders/Sprites/Bosses/Dino.yy",
   },
   "preMultiplyAlpha":false,
   "resourceType":"GMSprite",

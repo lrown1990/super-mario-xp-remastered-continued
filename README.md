@@ -14,15 +14,16 @@ come from the game itself rather than from memory or from videos.
 
 ### The bosses that were missing
 
-Five of the seven stages had no boss at all. Stage 2 ended in an empty room,
+Five of the seven stages had no boss at all, and the room where the last three
+guardians wait was empty as well. Stage 2 ended in an empty room,
 walking into the stage 3 arena dropped you straight on the game over screen, and
 stages 4, 5 and 6 simply stopped: the pipe at the end led nowhere and the last
 rooms did not exist in the project. Stage 6 was missing two of them, the store
 room where you stock up on hammers and hearts before the fight as well as the
 arena itself.
 
-All five fights are now in, along with the rooms they happen in, rebuilt from the
-original's own maps:
+All of those fights are now in, along with the rooms they happen in, rebuilt
+from the original's own maps:
 
 - **Stage 2, the Mammoth Flower.** It chases you along the floor, sinks and comes
   back up somewhere else, sends tentacles through the ground and drops spores.
@@ -46,6 +47,18 @@ original's own maps:
   head. He can only be hurt while he is standing still, and the more he takes the
   harder he works: two bolts instead of one, and the blocks come thicker. Beaten,
   he is squashed flat, lies there a moment and crumbles away.
+- **Stage 7, the three guardians.** Their room was in the project but stood
+  empty. Three of them take it in turns, in an order drawn afresh every time:
+  a spiked mine that splits in two every time it is killed, smaller each time,
+  until the room is crawling with them; a grinning ball of ice that calls in
+  copies of itself, all alike, only one of which can be hurt, and that spits
+  drops raining down through the floors; and an eye that walks the brick rows
+  with two fireballs turning around it, armoured while it moves, open and
+  vulnerable only when it stops. The room is a loop: walk off one side and you
+  come back in on the other, and the way out only opens once all three are
+  down. They arrive and leave through the pipes in the corners, and a ghost
+  crosses the room while you fight, joined by a second one for the last of the
+  three.
 
 ### The stages as the 2001 game had them
 
@@ -114,6 +127,18 @@ finishes them for good.
   dropped inside them stayed stuck there for good.
 - **The stage select screen could crash the game to a black screen** if it was
   reached without a single finished stage.
+- **Everything the game left to chance came out the same every session.** The
+  random generator was never seeded, so every run drew the same sequence: the
+  three guardians turned up in the same order every time, and the rest of what
+  should have been chance was just as predictable.
+- **A game over left you with a single life** if you chose to quit to the menu
+  instead of carrying on. Carrying on gave you a full set, but the save still
+  held the one life you had died with, so starting a stage from the menu handed
+  you that.
+- **Hitting a block from below did nothing in the guardians' room**, which is
+  the one room in the game built around doing exactly that: the blocks are how
+  you reach something standing on the row above you, and they had never once
+  answered. They were out by a single pixel.
 - **The music had gone mono** and is stereo again.
 - **Three stage tracks did not loop.** They were cut so that the end joins the
   beginning without a gap or a click.
@@ -133,6 +158,10 @@ Worth knowing before merging anything back:
   point where a looping track starts over, turning the music into a continuous
   tone. Shortening the loop by a single sample avoids it. The web build in this
   fork's sister project does that from the hosting page.
+- Also be aware that if you put the game in a frame, some browsers will keep it
+  silent unless the hosting page explicitly allows that frame to play sound.
+  Nothing is reported when they do: the game loads its sounds, decodes them and
+  plays them, and you hear nothing.
 - Converting the project to GameMaker LTS 2026 rewrote every project file, so the
   diff is large. The real work is in the scripts, the rooms and the new resources
   listed above.
