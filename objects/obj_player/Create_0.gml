@@ -99,5 +99,22 @@ if(global.initialWarping) {
 			global.startY = -1;
 			break;
 		}
+		
+		// Arrive at a spot with no pipe to climb out of: Mario is simply put
+		// there and takes back the controls at once. It is what the original
+		// does coming back from the secret room of the 7-3 (level 62, event 4:
+		// it only moves Mario_01 to 248,48), and there is no pipe up there to
+		// come out of, only the top of the invisible stair.
+		case "none": {
+			obj_player.canMove = true;
+			obj_player.warpState = false;
+			obj_player.warpChangeScreen = false;
+			obj_player.warpDirection = "none";
+			global.screenToWarp = noone;
+			global.initialWarping = false;
+			global.startX = -1;
+			global.startY = -1;
+			break;
+		}
 	}
 }

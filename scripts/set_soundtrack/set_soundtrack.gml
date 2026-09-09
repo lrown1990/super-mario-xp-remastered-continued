@@ -17,6 +17,10 @@ function set_soundtrack(soundtrack){
 	global.bgm_preboss = bgm_preboss_remaster;
 	global.bgm_boss_intro = bgm_boss_intro_remaster;
 	global.bgm_boss_loop = bgm_boss_loop_remaster;
+	// Final boss (Bowser arena): its own track, cut from the source so the
+	// intro plays once and the loop repeats seamlessly.
+	global.bgm_boss_final_intro = bgm_boss_final_intro;
+	global.bgm_boss_final_loop = bgm_boss_final_loop;
 	global.bgm_boss_defeated = bgm_boss_defeated;
 	global.bgm_boss2 = bgm_boss_2_remaster;
 	global.bgm_death_jingle = bgm_death_jingle_remaster;

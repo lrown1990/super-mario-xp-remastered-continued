@@ -59,6 +59,29 @@ from the original's own maps:
   down. They arrive and leave through the pipes in the corners, and a ghost
   crosses the room while you fight, joined by a second one for the last of the
   three.
+- **Stage 7, the road to Bowser.** Past the guardians the stage used to end on
+  the game over screen. It goes where it should now: a hidden chamber above the
+  last room, reached by a stair of invisible blocks and left through a pipe, and
+  from there the throne room at the top of the castle. The chamber can be
+  visited once per run, and once the door has been used the stair is taken away,
+  so there is no climbing over the top of the room and dropping into the arena
+  from above.
+
+### The throne room
+
+The last room of the game was a bare hall in the 2001 original. It has been
+redrawn: the banners and the statue over the throne, a stone bridge with lava
+running underneath, six torches burning along the walls, and a night sky behind
+the windows, with clouds drifting past and the moon showing through the arch.
+It has music of its own, an opening that plays once and a theme that loops
+behind the fight.
+
+The ways out at the sides stay shut while the fight is on. Outside the arena
+there is no floor, so walking out was never an exit, it was a fall. They open
+when the boss goes down.
+
+**Bowser himself is not in there yet.** The room, the music and the way to reach
+it are finished; he is what is left.
 
 ### The stages as the 2001 game had them
 

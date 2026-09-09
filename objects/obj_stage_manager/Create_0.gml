@@ -1,6 +1,11 @@
 deathTimeout = 0;
 
-if(!audio_is_playing(stage_bgm) && !audio_is_playing(stage_bgm_loop) || !global.continuousMusic) {
+// A room can ask for SILENCE by leaving stage_bgm at noone. The secret room
+// above the 7-3 has no music in the original and has to stay that way, and
+// without this the manager would try to play the track "noone".
+if(stage_bgm == noone) {
+	audio_stop_all();
+} else if(!audio_is_playing(stage_bgm) && !audio_is_playing(stage_bgm_loop) || !global.continuousMusic) {
 	audio_stop_all();
 	
 	if(stage_bgm_loop == noone)
@@ -10,6 +15,10 @@ if(!audio_is_playing(stage_bgm) && !audio_is_playing(stage_bgm_loop) || !global.
 }
 
 global.lastRoom = redirect_after_death == noone ? room : redirect_after_death;
+
+// Every room starts with the boss still alive: otherwise, coming back after
+// beating it once, the gate of the arena would already be open.
+global.bossBattuto = false;
 
 stage_fadeout = false;
 

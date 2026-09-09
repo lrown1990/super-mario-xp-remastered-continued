@@ -39,6 +39,13 @@ global.screenToWarp = noone;
 
 global.warpsEntered = [];
 
+// Has the boss of the arena been beaten? The gate of the arena
+// (obj_boss_gate) reads it: while it is false the player cannot walk out of
+// the sides, because there is no floor out there and it would be a fall, not
+// an exit. obj_stage_manager puts it back to false at the start of every room,
+// and the boss turns it on when it dies.
+global.bossBattuto = false;
+
 // The hidden 1UP blocks already opened in this run. A 1UP is worth having
 // once: after that the same block gives a big heart instead. Same idea as
 // warpsEntered above, and it is emptied in the same two places.

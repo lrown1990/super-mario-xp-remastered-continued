@@ -1,0 +1,26 @@
+{
+  "$GMSound":"v2",
+  "%Name":"bgm_boss_final_intro",
+  "audioGroupId":{
+    "name":"audiogroup_default",
+    "path":"audiogroups/audiogroup_default",
+  },
+  "bitDepth":1,
+  "channelFormat":1,
+  "compression":0,
+  "compressionQuality":0,
+  "conversionMode":0,
+  "duration":11.714896,
+  "exportDir":"",
+  "name":"bgm_boss_final_intro",
+  "parent":{
+    "name":"Remaster",
+    "path":"folders/Sounds/Musics/Remaster.yy",
+  },
+  "preload":false,
+  "resourceType":"GMSound",
+  "resourceVersion":"2.0",
+  "sampleRate":48000,
+  "soundFile":"bgm_boss_final_intro.wav",
+  "volume":1.0,
+}
