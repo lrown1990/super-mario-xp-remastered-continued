@@ -152,6 +152,17 @@ finishes them for good.
   bouncing, and he threw two crosses where Mario throws one.
 - **Mushrooms could walk out of the world** in the room that opens onto the stage
   3 arena, and were lost.
+- **A mushroom would not fall into a gap one block wide.** What held one up was
+  the ground under the whole of it, and it is wider underneath than it looks: a
+  corner always found the block next door, so it sat over the hole instead of
+  dropping through it the way it does in the 2001 game. What carries it now is
+  the ground under its middle.
+- **And a mushroom walking off an edge slid down the side of it.** It turned
+  round whenever anything at all touched it, so the block it had just stepped
+  off counted as a wall the moment it dropped a pixel: it flipped back and forth
+  and came down glued to that edge. It turns on what is in front of it now, so
+  it keeps walking as it falls and comes away; in a hole one block wide it
+  bounces between the two sides and goes down the middle.
 - **The stage 3 boss could push you up through the ceiling** if you kept stomping
   it as it rose.
 - **The hammer throwing turtle walked through walls.** Two of its rules cancelled
@@ -180,6 +191,13 @@ finishes them for good.
 - **The music had gone mono** and is stereo again.
 - **Three stage tracks did not loop.** They were cut so that the end joins the
   beginning without a gap or a click.
+- **The clouds in the throne room drifted with parallax switched off.** Turn the
+  option off and every other background in the game stands still; those kept
+  moving on their own.
+- **Enter left the options screen whichever entry you were on**, so the key you
+  confirm with everywhere else could not be used to change a setting: only the
+  arrows could. It steps an entry on to its next value now, and still leaves the
+  screen from "exit".
 
 ## About the web version
 
