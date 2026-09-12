@@ -65,7 +65,9 @@ from the original's own maps:
   from there the throne room at the top of the castle. The chamber can be
   visited once per run, and once the door has been used the stair is taken away,
   so there is no climbing over the top of the room and dropping into the arena
-  from above.
+  from above. The hall before the arena has been redrawn as well: its
+  arcades fill the room wall to wall, and the stone Bowser is back on his ledge
+  watching the doorway, the way the 2001 game had him.
 
 ### The throne room
 
@@ -80,8 +82,21 @@ The ways out at the sides stay shut while the fight is on. Outside the arena
 there is no floor, so walking out was never an exit, it was a fall. They open
 when the boss goes down.
 
-**Bowser himself is not in there yet.** The room, the music and the way to reach
-it are finished; he is what is left.
+**And Bowser is in it now.** He throws hammers, breathes fire and charges the
+length of the bridge, and what he does was read out of the 2001 game's own event
+files rather than copied from videos. The ways out open when he goes down.
+
+### The ending
+
+Beating him used to leave you on a placeholder screen. The game ends properly
+now, the way the 2001 original ended it.
+
+She is waiting in the hall beyond the arena, with her back to the door. At some
+point she turns, walks over to meet you, and a message thanks you and tells you
+the quest is over. Then the two of you walk off together and the screen wipes.
+
+The original rolled its credits after that. This fork stops at the game over
+screen instead.
 
 ### The stages as the 2001 game had them
 

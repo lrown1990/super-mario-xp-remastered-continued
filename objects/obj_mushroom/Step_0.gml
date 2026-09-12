@@ -93,17 +93,41 @@ switch(mushroomType) {
 
 entityCurrentY += 0.2;
 
-if(!place_meeting(x, y + round(entityCurrentY), obj_ground_group) && !appearing && !global.playerDead) {
-	y += round(entityCurrentY);
-} else {
-	while(!place_meeting(x, y + sign(entityCurrentY), obj_ground_group) && !global.playerDead) {
-		y += sign(entityCurrentY);
+// What holds it up is the ground under its CENTRE, one pixel at a time, not
+// under its whole mask. With the whole mask (18 px wide) a corner always
+// rested on a neighbouring block and it never dropped into a gap one block
+// wide, which it does in the original (reported from play, 12 September 2026):
+// the original's collision is on the sprite's own pixels, and a mushroom is
+// narrow at the bottom. Going up, after a headbutt from below, the whole mask
+// still counts, as before.
+var scendi = round(entityCurrentY);
+if(scendi >= 0) {
+	if(!appearing && !global.playerDead) {
+		var fatti = 0;
+		while(fatti < scendi && !position_meeting(x, y + 1, obj_ground_group)) {
+			y += 1;
+			fatti += 1;
+		}
+		if(fatti < scendi)
+			entityCurrentY = 0;   // it touched down
 	}
-	
+} else if(!place_meeting(x, y + scendi, obj_ground_group) && !appearing && !global.playerDead) {
+	y += scendi;
+} else {
+	while(!place_meeting(x, y - 1, obj_ground_group) && !global.playerDead) {
+		y -= 1;
+	}
 	entityCurrentY = 0;
 }
 
-if(place_meeting(x + (entitySpeed * entityDirection), y, obj_ground_group)) {
+// It turns when its LEADING edge meets a wall: a line down the front of the
+// sprite, not the whole mask. With the whole mask, the block it had just
+// walked off still counted as a wall the moment it dropped a pixel, so it
+// flipped back and forth and slid down glued to that edge, "like water"
+// (reported from play, 12 September 2026). Now it keeps walking while it
+// falls and comes away from the edge; in a hole one block wide it bounces
+// between the two sides and goes down the middle.
+if(collision_line(x + entityDirection * 9, y - 15, x + entityDirection * 9, y - 1, obj_ground_group, false, true) != noone) {
 	entityDirection = -entityDirection;
 }
 

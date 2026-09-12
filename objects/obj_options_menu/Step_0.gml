@@ -47,6 +47,32 @@ if(!pressedOption && global.horizontal != 0) {
 	}
 }
 
+// ENTER (or Z, the game's other confirm key) on an entry steps its value on
+// to the next one, wrapping round at the end, the same as the arrows do.
+// Until 12 September 2026 it left the options screen from any entry, which
+// is what it still does, and only does, on "exit" (the last entry). Reported
+// from play.
+if((global.start || global.jump) && arrCurrent != array_length(arrProps) - 1) {
+	audio_play_sound(snd_cursor_move, 1, false);
+	cambiato = true;
+	switch(arrCurrent) {
+		case 0: {
+			arrCharacterCurrent = (arrCharacterCurrent + 1) mod array_length(characterList);
+			break;
+		}
+
+		case 1: {
+			arrParallaxCurrent = (arrParallaxCurrent + 1) mod array_length(parallaxActivated);
+			break;
+		}
+
+		case 2: {
+			arrTransitionCurrent = (arrTransitionCurrent + 1) mod array_length(smoothTransitionsActivated);
+			break;
+		}
+	}
+}
+
 switch(arrCurrent) {
 	case 0: {
 		global.character = characterList[arrCharacterCurrent];
@@ -86,5 +112,6 @@ if(pressedOption && global.horizontal == 0) {
 	pressedOption = false;
 }
 
-if(global.start)
+// "exit": ENTER confirms, as in every menu of the game
+if((global.start || global.jump) && arrCurrent == array_length(arrProps) - 1)
 	room_goto(title_screen);
