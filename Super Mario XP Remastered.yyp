@@ -104,6 +104,7 @@
   },
   "name":"Super Mario XP Remastered",
   "resources":[
+    {"id":{"name":"spr_6_warpzone","path":"sprites/spr_6_warpzone/spr_6_warpzone.yy",},},
     {"id":{"name":"spr_stage3_corridor","path":"sprites/spr_stage3_corridor/spr_stage3_corridor.yy",},},
     {"id":{"name":"obj_stage3_clouds","path":"objects/obj_stage3_clouds/obj_stage3_clouds.yy",},},
     {"id":{"name":"spr_stage3_clouds","path":"sprites/spr_stage3_clouds/spr_stage3_clouds.yy",},},

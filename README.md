@@ -125,6 +125,16 @@ they should: fire does nothing to them, a stomp or a hammer knocks them apart an
 they pull themselves back together a few seconds later, and only the cross
 finishes them for good.
 
+### A warp zone on the roof of stage 5
+
+The bonus level you reach from the roof of the lift room in stage 5 now ends the
+way a warp zone should: the pipe at the far end carries a **6** above it and
+drops you at the start of 6-1, the same way the "3" pipe in the bonus level of
+stage 2 takes you into stage 3. Going down it counts as reaching stage 6, so the
+save unlocks it in Select Stage just as beating the fifth boss would. The pipes
+along the way grew the piranha plants they never had, in green and red, except
+the last two, which stay quiet.
+
 ### Smaller things
 
 - The character now walks across the world map on every stage, not just the first

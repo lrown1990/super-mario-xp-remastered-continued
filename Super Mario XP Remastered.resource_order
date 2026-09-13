@@ -9,6 +9,7 @@
     {"name":"Lakitu","order":2,"path":"folders/Sprites/Enemies/Lakitu.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"spr_6_warpzone","order":957,"path":"sprites/spr_6_warpzone/spr_6_warpzone.yy",},
     {"name":"spr_stage3_corridor","order":956,"path":"sprites/spr_stage3_corridor/spr_stage3_corridor.yy",},
     {"name":"obj_stage3_clouds","order":954,"path":"objects/obj_stage3_clouds/obj_stage3_clouds.yy",},
     {"name":"spr_stage3_clouds","order":953,"path":"sprites/spr_stage3_clouds/spr_stage3_clouds.yy",},
