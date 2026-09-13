@@ -69,6 +69,18 @@ from the original's own maps:
   arcades fill the room wall to wall, and the stone Bowser is back on his ledge
   watching the doorway, the way the 2001 game had him.
 
+### The Nightmare's arena
+
+The room where the stage 3 boss waits used to be a plain tiled wall that had
+nothing to do with the fight. It has been redrawn as an open loggia: three
+arches with a balustrade, stone pedestals at the sides, and beyond them a
+graveyard under a full moon, with bare trees, a chapel, iron railings and a
+castle on the skyline. Clouds drift slowly across the sky behind the arches;
+they hold still when parallax scrolling is switched off in the options, like
+everything else that moves in the backgrounds. The corridor before the arena,
+where the question blocks are, now looks out through the same arcades and night
+sky as the hall before Bowser, instead of the old blue wall.
+
 ### The throne room
 
 The last room of the game was a bare hall in the 2001 original. It has been

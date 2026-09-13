@@ -9,6 +9,11 @@
     {"name":"Lakitu","order":2,"path":"folders/Sprites/Enemies/Lakitu.yy",},
   ],
   "ResourceOrderSettings":[
+    {"name":"spr_stage3_corridor","order":956,"path":"sprites/spr_stage3_corridor/spr_stage3_corridor.yy",},
+    {"name":"obj_stage3_clouds","order":954,"path":"objects/obj_stage3_clouds/obj_stage3_clouds.yy",},
+    {"name":"spr_stage3_clouds","order":953,"path":"sprites/spr_stage3_clouds/spr_stage3_clouds.yy",},
+    {"name":"spr_stage3_cemetery","order":952,"path":"sprites/spr_stage3_cemetery/spr_stage3_cemetery.yy",},
+    {"name":"spr_stage3_arches","order":951,"path":"sprites/spr_stage3_arches/spr_stage3_arches.yy",},
     {"name":"spr_bowser_statue","order":950,"path":"sprites/spr_bowser_statue/spr_bowser_statue.yy",},
     {"name":"ending","order":949,"path":"rooms/ending/ending.yy",},
     {"name":"obj_ending_manager","order":948,"path":"objects/obj_ending_manager/obj_ending_manager.yy",},

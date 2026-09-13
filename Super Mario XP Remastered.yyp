@@ -104,6 +104,11 @@
   },
   "name":"Super Mario XP Remastered",
   "resources":[
+    {"id":{"name":"spr_stage3_corridor","path":"sprites/spr_stage3_corridor/spr_stage3_corridor.yy",},},
+    {"id":{"name":"obj_stage3_clouds","path":"objects/obj_stage3_clouds/obj_stage3_clouds.yy",},},
+    {"id":{"name":"spr_stage3_clouds","path":"sprites/spr_stage3_clouds/spr_stage3_clouds.yy",},},
+    {"id":{"name":"spr_stage3_cemetery","path":"sprites/spr_stage3_cemetery/spr_stage3_cemetery.yy",},},
+    {"id":{"name":"spr_stage3_arches","path":"sprites/spr_stage3_arches/spr_stage3_arches.yy",},},
     {"id":{"name":"spr_bowser_statue","path":"sprites/spr_bowser_statue/spr_bowser_statue.yy",},},
     {"id":{"name":"ending","path":"rooms/ending/ending.yy",},},
     {"id":{"name":"obj_ending_manager","path":"objects/obj_ending_manager/obj_ending_manager.yy",},},
