@@ -151,7 +151,10 @@ the last two, which stay quiet.
   could replay the rest of the stage on that same state, reloading from the menu
   every time it went badly. It now records where you stand each time a level
   starts, and your lives are part of what it keeps, which they never were.
-- **New game asks first** when a save already exists, instead of quietly wiping it.
+- **New game asks first** when there is progress to lose, instead of quietly
+  wiping it: that is, once a stage beyond the first has been reached, the same
+  thing that unlocks stage select. A run that never got past stage 1 has
+  nothing to lose and starts over without asking.
 - **Options are remembered between sessions**, and starting a new game no longer
   clears them.
 - The options screen says what each character is good at.
