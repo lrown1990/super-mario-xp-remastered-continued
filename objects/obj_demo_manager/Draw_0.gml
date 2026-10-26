@@ -16,9 +16,9 @@ draw_set_font(small_font);
 // In the order it happened: first whoever wrote it in 2001, then whoever
 // rebuilt it in GameMaker, then whoever picked it up again.
 var crediti = [
-	["Original by:",             "CnC Darkside",  c_lime],
-	["Remaster by:",             "Matth33w",      c_red],
-	["Forked and continued by:", "Carlo Sinatra", c_yellow]
+	["Original by:",           "CnC Darkside",  c_lime],
+	["Remaster by:",           "Matth33w",      c_red],
+	["Forked and finished by:", "Carlo Sinatra", c_yellow]
 ];
 
 // Three blocks of two lines, spread over the 240 pixels of the screen: the
