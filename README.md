@@ -4,6 +4,9 @@ Fork of [Matth33w's Super Mario XP Remastered](https://github.com/Matth33w/super
 the GameMaker remake of **Super Mario XP**, the game CnC Darkside released in 2001.
 He stopped partway through. This fork carries it on, and runs it in a browser.
 
+**Play it in your browser** on [carlosinatra.me/portfolio](https://carlosinatra.me/portfolio/):
+Start → Programs → Games → Super Mario XP.
+
 The project opens in **GameMaker LTS 2026** and is exported as HTML5.
 
 Everything added here is checked against the 2001 original. Its level and event
